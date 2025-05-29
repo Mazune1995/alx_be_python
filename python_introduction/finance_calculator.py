@@ -1,16 +1,16 @@
-#!/usr/bin/python3
+# finance_calculator.py
 
 def main():
     # Prompt the user for financial inputs
     try:
-        income = float(input("Enter your monthly income: "))
-        expenses = float(input("Enter your total monthly expenses: "))
+        monthly_income = float(input("Enter your monthly income: "))
+        monthly_expenses = float(input("Enter your total monthly expenses: "))
     except ValueError:
         print("Please enter valid numeric values for income and expenses.")
         return
 
-    # Calculate monthly savings
-    monthly_savings = income - expenses
+    # Correct monthly savings calculation
+    monthly_savings = monthly_income - monthly_expenses
 
     # Project annual savings with 5% interest
     annual_savings = monthly_savings * 12
