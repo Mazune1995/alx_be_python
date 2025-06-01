@@ -4,10 +4,10 @@
 num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))
 
-# Prompt the user for an operation
+# Ask for the operation
 operation = input("Choose the operation (+, -, *, /): ")
 
-# Perform the operation using if-elif-else
+# Perform the operation using if/elif
 if operation == "+":
     result = num1 + num2
     print(f"The result is {result}.")
