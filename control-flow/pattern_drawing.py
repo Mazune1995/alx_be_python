@@ -1,17 +1,15 @@
 #!/usr/bin/python3
-try:
-    size = int(input("Enter the size of the pattern: "))
-    if size <= 0:
-        print("Please enter a positive integer.")
-        exit()
-except ValueError:
-    print("Invalid input. Please enter a valid integer.")
-    exit()
 
+size = int(input("Enter the size of the pattern: "))
+
+# Initialize row counter
 row = 0
+
+# Use a while loop for rows
 while row < size:
+    # Use a for loop for columns
     for col in range(size):
-        print("*", end="")
-    print()  # Move to the next line after each row
+        print("*", end="")  # Print asterisk without newline
+    print()  # Newline after each row
     row += 1
 #
