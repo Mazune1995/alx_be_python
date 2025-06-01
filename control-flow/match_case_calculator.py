@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-try:
-    num1 = float(input("Enter the first number:"))
-    num2 = float(input("Enter the second number:"))
-except ValueError:
-    print("Invalid input. Please enter numeric values.")
-    exit()
 
-operation = input("Choose the operation (+, -, *, /):")
+# Prompt the user for two numbers
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
 
+# Prompt the user for an operation
+operation = input("Choose the operation (+, -, *, /): ")
+
+# Perform the operation using if-elif-else
 if operation == "+":
     result = num1 + num2
     print(f"The result is {result}.")
