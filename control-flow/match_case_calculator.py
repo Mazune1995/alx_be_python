@@ -1,13 +1,11 @@
 #!/usr/bin/python3
 
-# Prompt the user for two numbers
+# Prompt for user input
 num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))
-
-# Ask for the operation
 operation = input("Choose the operation (+, -, *, /): ")
 
-# Perform the operation using if/elif
+# Perform calculation using if-elif-else
 if operation == "+":
     result = num1 + num2
     print(f"The result is {result}.")
@@ -24,5 +22,5 @@ elif operation == "/":
         result = num1 / num2
         print(f"The result is {result}.")
 else:
-    print("Invalid operation. Please choose one of +, -, *, /.")
+    print("Invalid operation.")
 #
